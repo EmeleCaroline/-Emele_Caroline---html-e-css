@@ -1,0 +1,477 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("foto4.jpg"); 
+  background-attachment: fixed;
+  background-size: 33%;
+  height: 200%;
+
+ }
+ /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint 
+@media (min-width: 300px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 18px;
+  }
+}
+
+/* breakpoint 
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+}*/
+
+  header{
+    height: 95vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  u{
+    color: blanchedalmond;
+  }
+  h1{
+    text-align:center;
+    color: white;
+    font-family: Arial;
+    font-size: 35px;
+   
+  }
+  
+  h2 {
+    text-align:center; 
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 0.5em ;
+  }
+
+  .em{
+    align-items: center;
+  }
+
+  
+  .img1{
+    height: 330px;
+    width: 320px;
+    position: center;
+    border-radius: 50%;
+    box-sizing: 3px border-box;
+    border-left: 4px solid whitesmoke;
+    border-right: 4px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
+  }
+  .menu {
+    background-color: white;
+    color: black;
+    font-family: Comic Sans MS;
+    box-sizing: 3px border-box ;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-bottom:  solid black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+      
+  }
+  .menu li{
+    list-style: none;
+  }
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu a{
+     display: block;
+     padding: 5px 15px;
+     transition: background-color 1s, color 2s;
+     font-size: 26px;
+
+  }
+
+  .menu a:hover{
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  @media (min-width: 500px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
+  }
+
+  .titulo{
+    transform: scale(0.2) translateY(50vh) ;
+    opacity: 0;
+
+    animation: linear 2s animaçãotitulo forwards ;
+  }
+
+  @keyframes animaçãotitulo{
+    from{
+      transform: scale(0.2) translateY(50vh) ;
+      opacity: 0;
+
+    }
+    to{
+      transform: scale(1) translateY(0) ;
+      opacity: 1;
+
+    }
+  }
+
+  a{
+    color: black;
+    text-decoration: none; 
+    font-size: 25px;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .img{
+    height: 330px;
+    width: 300px;
+    box-sizing: border-box;
+    border-left: 4px solid whitesmoke;
+    border-right: 4px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
+    margin-bottom: 2em ;
+    
+    
+  }
+  .texto{
+    padding: 5px;
+  }
+  
+
+  p{
+    
+    color: whitesmoke;
+    text-indent: 1.4em;
+    margin-bottom: 1em;
+    text-align: justify;
+    font-size: 19px;
+        
+  }
+
+  
+  p:hover{
+    background-color: black; 
+  }
+  
+  hr{
+    color: blanchedalmond;
+    height: 2px;
+    text-align: center;
+  }
+
+  h3{
+    font-family: Arial;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 1.5em ;
+    text-align: center;
+  }
+
+  .img2 {
+    height: 320px;
+    width: 480px;
+    box-sizing: border-box;
+    border-left: 4px solid whitesmoke;
+    border-right: 4px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
+    margin-bottom: 2em ;
+    
+    
+  }
+  
+
+  .Rodape {
+    background-color:whitesmoke;
+    color: black;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  h4{
+    font-family: Arial;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+
+  }
+  
+
+  .img3 {
+    height: 320px;
+    width: 410px;
+    box-sizing: border-box;
+    border-left: 4px solid whitesmoke;
+    border-right: 4px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
+    margin-bottom: 2em ;
+    
+   
+    
+  }
+  
+
+  h5{
+    font-family: Arial;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.2em ;
+
+  }
+  .ele,
+  .eu,
+  .core,
+  .fotos,
+  .familia,
+  .livros,
+  .caçadores{
+    padding: 2em ;
+    margin-bottom: 1.5em ;
+    min-height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fotos .avatar{
+    float: left;
+    margin-right: 1em;
+  
+  }
+  .eu .avatar{
+    float: left;
+    margin-right: 1em;
+  }
+  
+  .hobbies{
+    padding: 2em ;
+    margin-bottom: 0.1em ;
+    min-height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hobbies .avatar{
+    float: left;
+    margin-right: 1em;
+  }
+  .ele .ab {
+    float: right;
+  margin-left: 0.5em;
+
+}
+
+  .familia .avatar {
+    float: left;
+    margin-right: 1em;
+
+}
+.core .ab{
+  float: right;
+  margin-left: 0.5em;
+}
+
+.corpo{
+ 
+  text-align: justify;
+  margin-right: 0.5em;
+}
+
+
+h6{
+  font-family: Arial;
+  font-style: italic;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-bottom: 1.2em ;
+
+}
+
+.img4{
+  height: 330px;
+  width: 350px;
+  position: center;
+  border-radius: 50%;
+  box-sizing: 3px border-box;
+  border-left: 4px solid whitesmoke;
+  border-right: 4px solid whitesmoke;
+  border-top: 4px solid whitesmoke;
+  border-bottom: 4px solid whitesmoke;
+}
+
+.livros .avatar{
+  float: left;
+  margin-right: 1em;
+}
+.av{
+  margin-block-start: 2em;
+}
+
+.livros a {
+  color: brown;
+}
+
+.caçadores .avatar{
+  float: left;
+  margin-right: 1em;
+
+}
+.caçadores a{
+  color: brown;
+}
+
+.instagram{
+  padding: 2em ;
+  margin-bottom: 1.5em ;
+  min-height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.instageral {
+
+  background: linear-gradient(to top, #c5c5c5, #ffffff00);
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #b3b3b3;
+      border-radius: 16px;
+      height: 30px;
+      box-shadow: 0px 8px 10px 0px #828282;
+  
+  }
+  
+  .instatitulo{
+      width: 100%;
+      border-bottom: 1px solid #c1c1c1;
+      padding-top: 5px;
+      padding-bottom: 13px;
+      text-align: left;
+      margin-bottom: 10px;
+      font-size: 18px;
+    font-family:arial;
+      color: #ba1e1e;
+      font-weight: bold;
+  }
+  .instatitulo:hover {
+      transition: .3s;
+      box-shadow: 8px 9px 0px 0px #dadada;
+      background: none;
+      padding-left: 20px;
+      width: 97%;
+      border-bottom: 3px solid #c1c1c1;
+  }
+  .instatitulo a{color: white !important;margin-left: 24px;text-decoration: none;}
+  .instatitulo a:hover{color: white!important;}
+  .instatitulo a:visited{color: whitesmoke !important;}
+  .text-center {
+  
+      text-align: left !important;
+  
+  }
+  .instatitulo a{
+    color: whitesmoke;
+  }  
+  .cliqueaqui{
+  display: inline;
+  color: white;
+  margin-left: 15px;
+  font-size: 16px;
+  }
+  
+  @media screen and (max-width:800px) {.cliqueaqui{display:none;}}
+  
+  .cliqueaqui::before {
+  margin-right: 7px;
+  transform: rotateY(180deg);
+  }
+  
+  .instatitulo:hover .cliqueaqui{color: #969696;}
+  
+  #rudr_instafeed{
+    list-style:none; 
+    margin-bottom:-0px;
+  }
+  #rudr_instafeed li{
+    float:left;
+    height:220px;
+    margin:10px 5px;
+  }
+  #rudr_instafeed li img{
+      max-width: 100%;
+      max-height: 90%;
+      border-radius: 1em;
+      box-shadow: 0px 5px 0px 0px whitesmoke;
+      border: 1px solid #bbbbbb;
+  }
+  #rudr_instafeed li img:hover{
+  
+      box-shadow: 5px 4px 0px 0px #afafaf;
+      border: 1px solid #ffffff;
+  
+  }
+  
+  @media screen and (max-width:800px) {
+  #rudr_instafeed {display: flex;overflow:auto;}
+  #rudr_instafeed li{height:146px;}
+  #rudr_instafeed li img {max-width: none;}
+     }
+  
+
+  
+
+  
+  
+
+  
+
+ /* @media (min-width: 1000px){
+    .fotos,
+    .hobbies,
+    .familia{
+      max-width: 1000px;
+  }
+
+  }*\
+  
+  
+
+  
+  
+     
